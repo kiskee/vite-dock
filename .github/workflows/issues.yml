@@ -1,15 +1,9 @@
 name: Ouput issues
-on:
-  issues:
-    types: [opened, edited, closed]
+on: issues
 jobs: 
   info:
     runs-on: ubuntu-latest
     steps:
       - name: Output issues
-        run: |
-          echo "Issue Title: ${{ github.event.issue.title }}"
-          echo "Issue Number: ${{ github.event.issue.number }}"
-          echo "Issue State: ${{ github.event.issue.state }}"
-          echo "Issue Body: ${{ github.event.issue.body }}"
-          echo "Issue Author: ${{ github.event.issue.user.login }}"
+        run: echo "Issue : ${{ github.event }}"
+          
