@@ -1,4 +1,4 @@
-name: Ecexution Flow
+name: Continue on error
 on:
   push:
     branches:
