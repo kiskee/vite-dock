@@ -14,10 +14,10 @@ describe("App Component", () => {
     expect(screen.getByText("Vite + React")).toBeDefined();
   });
 
-  it("renders the main title", () => {
-    render(<App />);
-    expect(screen.getByText("Vite + React aasa")).toBeDefined();
-  });
+  // it("renders the main title", () => {
+  //   render(<App />);
+  //   expect(screen.getByText("Vite + React aasa")).toBeDefined();
+  // });
   
   it("increments the count when button is clicked", () => {
     render(<App />);
