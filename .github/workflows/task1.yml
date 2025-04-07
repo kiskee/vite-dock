@@ -1,5 +1,5 @@
 name: Task1
-on: push
+on: workflow_dispatch #push
 jobs:
   lint:
     runs-on: ubuntu-latest
