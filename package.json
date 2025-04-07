@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "preview": "vite preview",
-    "test": "vitest --reporter=json --outputFile=./test.json"
+    "test": "vitest",
+    "test:create": "vitest --reporter=json --outputFile=./test.json"
   },
   "dependencies": {
     "react": "^19.0.0",
