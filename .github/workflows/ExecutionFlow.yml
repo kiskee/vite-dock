@@ -13,9 +13,10 @@ jobs:
         id: cache
         uses: actions/cache@v4
         with:
-          path: ~/.npm
+          path: node-modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Lint code
         run: npm run lint
