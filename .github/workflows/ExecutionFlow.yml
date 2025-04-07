@@ -86,4 +86,4 @@ jobs:
       - name: Ouput Information
         run: |
           echo "someting went wrong"
-          echo ${{ github }}
+          echo ${{ toJSON(github) }}
