@@ -78,3 +78,11 @@ jobs:
         run: ls
       - name: Deploy
         run: echo "Deploying..."
+  report:
+    if: failure()
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Ouput Information
+        run: |
+          echo "someting went wrong"
+          echo ${{ github }}
